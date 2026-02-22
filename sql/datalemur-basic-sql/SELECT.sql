@@ -1,0 +1,10 @@
+/*
+SQL Select Practice Exercise
+https://datalemur.com/questions/sql-select-practice-exercise
+
+Your given a products table, which contains data about different Microsoft Azure cloud products.
+
+Output all the data, in all the columns.
+*/
+
+SELECT * FROM products;
