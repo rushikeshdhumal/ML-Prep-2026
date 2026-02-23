@@ -1,0 +1,17 @@
+/*
+SQL BETWEEN
+https://datalemur.com/questions/sql-between-practice-exercise
+
+Imagine you are a Data Analyst working at CVS Pharmacy, and you had access to pharmacy sales data. Use the BETWEEN SQL command to find data on medicines:
+
+which sold between 100,000 units and 105,000 units
+AND were manufactured by either Biogen, AbbVie, or Eli Lilly
+Output the manufacturer name, drug name, and the # of units sold.
+
+Hint: this problem requires not just BETWEEN, but also OR, AND, and WHERE clauses!
+*/
+
+SELECT manufacturer, drug,	units_sold FROM pharmacy_sales
+WHERE (manufacturer = 'Biogen' OR manufacturer = 'AbbVie' OR manufacturer = 'Eli Lilly')
+AND
+(units_sold BETWEEN 100000 AND 105000);
